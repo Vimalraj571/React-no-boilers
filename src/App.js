@@ -3,7 +3,7 @@ import Test from "./components/Test";
 function App() {
   return (
     <div>
-      Simple App
+      Simple  This is from App
       <Test />
     </div>
   );
