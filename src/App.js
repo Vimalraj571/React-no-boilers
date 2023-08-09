@@ -1,8 +1,13 @@
 import ChildOne from "./components/ChildOne";
 import ExampleHeader from "./components/ExampleHeader";
+import ObjectRender from "./components/ObjectRender";
 
 function App() {
   const a = 10;
+  const objectIssue = {
+    name: "test name",
+    age: 11,
+  };
   return (
     <div>
       <ExampleHeader countExample={a} />
@@ -13,6 +18,7 @@ function App() {
           <ChildTwo>(child two) to <ChildThree>
           We are using {...props} to directly get the data in the props from all the component
       */}
+      <ObjectRender obj={objectIssue} />
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import ChildTwo from "./ChildTwo";
-
 const ChildFour = (props) => {
   return (
     <>
