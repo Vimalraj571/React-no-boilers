@@ -1,10 +1,11 @@
-import Test from "./components/Test";
+import ExampleHeader from "./components/ExampleHeader";
 
 function App() {
+  const a = 10;
   return (
     <div>
-      Simple  This is from App
-      <Test />
+      <ExampleHeader countExample={a} />
+      {/* Above line Passing the props from App(parent component) to ExampleHeader(child component) */}
     </div>
   );
 }
