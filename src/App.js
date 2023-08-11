@@ -1,3 +1,4 @@
+import ArrObj from "./components/ArrObj";
 import ArrReact from "./components/ArrReact";
 import ChildOne from "./components/ChildOne";
 import ExampleHeader from "./components/ExampleHeader";
@@ -25,7 +26,8 @@ function App() {
       {/* <ObjectRender obj={objectIssue} /> */}
       {/* <Wrapper /> */}
       {/* <SimpleState /> */}
-      <ArrReact />
+      {/* <ArrReact /> */}
+      <ArrObj />
     </div>
   );
 }

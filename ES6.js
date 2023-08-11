@@ -22,7 +22,7 @@ var c = 30;
 
 /* The ES6 Stuffs */
 
-const notes = [
+const tickets = [
   {
     id: 1,
     name: "one",
@@ -50,28 +50,28 @@ const notes = [
 ];
 
 // Apply given things to all the element
-// console.log(notes.map((note) => `<>${note.id}</>`));
+// console.log(tickets.map((note) => `<>${note.id}</>`));
 
 // Returns the matched condition array
-// console.log(notes.filter((note) => note.address === "bangalore"));
+// console.log(tickets.filter((note) => note.address === "bangalore"));
 
 // Returns Boolean Stuff
-// console.log(notes.some((note) => note.address === "bangalore"));
+// console.log(tickets.some((note) => note.address === "bangalore"));
 
 // Find first and return as json
-// console.log(notes.find((note) => note.address === "bangalore"));
+// console.log(tickets.find((note) => note.address === "bangalore"));
 
 // Accumulate the value Dead Simple example
-// console.log(notes.reduce((acc,next)=>{
+// console.log(tickets.reduce((acc,next)=>{
 //     acc = next.fare+acc
 //     return acc
 // },0))
 
 // Removes the first one
-// console.log(notes.shift());
+// console.log(tickets.shift());
 
 // Append to the array and return as newly created array
-// console.log(notes.concat({
+// console.log(tickets.concat({
 //     id: 5,
 //     name: "five",
 //     address: "madurai",
