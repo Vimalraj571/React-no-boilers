@@ -1,6 +1,8 @@
 import ChildOne from "./components/ChildOne";
 import ExampleHeader from "./components/ExampleHeader";
+import HOC from "./components/HOC";
 import ObjectRender from "./components/ObjectRender";
+import Wrapper from "./components/Wrapper";
 
 function App() {
   const a = 10;
@@ -18,7 +20,8 @@ function App() {
           <ChildTwo>(child two) to <ChildThree>
           We are using {...props} to directly get the data in the props from all the component
       */}
-      <ObjectRender obj={objectIssue} />
+      {/* <ObjectRender obj={objectIssue} /> */}
+      <Wrapper />
     </div>
   );
 }
