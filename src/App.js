@@ -16,6 +16,8 @@ import FormSubmit from "./components/part_5/FormSubmit";
 import Uncontrolled from "./components/part_5/Uncontrolled";
 import Controlled from "./components/part_5/Controlled";
 import SimpleTodoRoot from "./components/part_5/SimpleTodo";
+import SimpleHook from "./components/part_6/SimpleHook";
+import SimpleFetch from "./components/part_6/SimpleFetch";
 
 function App() {
   const a = 10;
@@ -42,7 +44,9 @@ function App() {
       {/* <FormSubmit /> */}
       {/* <Uncontrolled /> */}
       {/* <Controlled /> */}
-      <SimpleTodoRoot />
+      {/* <SimpleTodoRoot /> */}
+      {/* <SimpleHook /> */}
+      <SimpleFetch /> 
     </div>
   );
 }
