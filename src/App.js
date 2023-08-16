@@ -1,10 +1,13 @@
 import ArrObj from "./components/ArrObj";
 import ArrReact from "./components/ArrReact";
 import ChildOne from "./components/ChildOne";
+import Controlled from "./components/Controlled";
 import ExampleHeader from "./components/ExampleHeader";
+import FormSubmit from "./components/FormSubmit";
 import HOC from "./components/HOC";
 import ObjectRender from "./components/ObjectRender";
 import SimpleState from "./components/SimpleState";
+import Uncontrolled from "./components/Uncontrolled";
 import Wrapper from "./components/Wrapper";
 
 function App() {
@@ -27,7 +30,10 @@ function App() {
       {/* <Wrapper /> */}
       {/* <SimpleState /> */}
       {/* <ArrReact /> */}
-      <ArrObj />
+      {/* <ArrObj /> */}
+      {/* <FormSubmit /> */}
+      {/* <Uncontrolled /> */}
+      <Controlled />
     </div>
   );
 }
