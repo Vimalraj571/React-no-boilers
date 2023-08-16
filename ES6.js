@@ -50,9 +50,7 @@ const tickets = [
 ];
 
 // Apply given things to all the element
-<<<<<<< HEAD
-// console.log(tickets.map((note) => `<>${note.id}</>`));
-=======
+
 // console.log(notes.map((note) => `<li>${note.id}</li>`));
 // const liStuff = notes.map((note) => `<li>${note.id}</li>`)
 
@@ -63,7 +61,6 @@ const tickets = [
 // return (
 //   <>{notes.map((note) =>`<li>${note.id}</li>`)}</>
 // )
->>>>>>> part_3
 
 // Returns the matched condition array
 // console.log(tickets.filter((note) => note.address === "bangalore"));
@@ -75,24 +72,15 @@ const tickets = [
 // console.log(tickets.find((note) => note.address === "bangalore"));
 
 // Accumulate the value Dead Simple example
-<<<<<<< HEAD
-// console.log(tickets.reduce((acc,next)=>{
-//     acc = next.fare+acc
-=======
 // console.log(notes.reduce((acc,next)=>{
 //     acc = next.fare + acc
->>>>>>> part_3
 //     return acc
 // },0))
 
 // Removes the first one
-<<<<<<< HEAD
-// console.log(tickets.shift());
-=======
 // console.log(notes)
 // console.log(notes.shift());
 // console.log(notes)
->>>>>>> part_3
 
 // Append to the array and return as newly created array
 // console.log(tickets.concat({

@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       {/* <Test /> */}
-      {/* {/* <ExampleHeader countExample={a} /> */} */}
+      {/* {/* <ExampleHeader countExample={a} /> */} 
       {/* Above line Passing the props from App(parent component) to ExampleHeader(child component) */}
       {/* <ChildOne ch1={"ch1"} ch2={"ch2"} ch3={"ch3"} /> */}
       {/* Here We are passing the the props from App(parent component) to <ChildOne>(child One) .  
