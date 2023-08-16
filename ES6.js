@@ -50,7 +50,16 @@ const notes = [
 ];
 
 // Apply given things to all the element
-// console.log(notes.map((note) => `<>${note.id}</>`));
+// console.log(notes.map((note) => `<li>${note.id}</li>`));
+// const liStuff = notes.map((note) => `<li>${note.id}</li>`)
+
+// return (
+//   <>{liStuff}</>
+// )
+
+// return (
+//   <>{notes.map((note) =>`<li>${note.id}</li>`)}</>
+// )
 
 // Returns the matched condition array
 // console.log(notes.filter((note) => note.address === "bangalore"));
@@ -63,12 +72,14 @@ const notes = [
 
 // Accumulate the value Dead Simple example
 // console.log(notes.reduce((acc,next)=>{
-//     acc = next.fare+acc
+//     acc = next.fare + acc
 //     return acc
 // },0))
 
 // Removes the first one
+// console.log(notes)
 // console.log(notes.shift());
+// console.log(notes)
 
 // Append to the array and return as newly created array
 // console.log(notes.concat({
@@ -77,6 +88,8 @@ const notes = [
 //     address: "madurai",
 //     fare:100
 // }));
+
+// console.log(notes);
 
 // Template Literals
 
@@ -116,7 +129,8 @@ const promise = new Promise((resolve, reject) => {
 });
 
 // promise
-//     .then(res=>console.log(res))
+//     .then((res)=>{console.log(res);return res})
+//     .then(result=>console.log(result))
 //     .catch(err=>console.log(err))
 //     .finally(()=>console.log("This is finally"))
 
@@ -135,34 +149,34 @@ async function simpleTest() {
 
 // Arrow Function vs Normal Function
 
-function test1() {
-  console.log(arguments);
-  console.log("test1");
-}
+// function test1() {
+//   console.log(arguments);
+//   console.log("test1");
+// }
 
-test1("arg1", "arg2", 2, 1, 2);
+// test1("arg1", "arg2", 2, 1, 2);
 
-const test2 = () => {
-  console.log("test2");
-};
+// const test2 = () => {
+//   console.log("test2");
+// };
 
-const obj = {
-  name: "sample Name",
-  print: function () {
-    console.log(this);
-  },
-};
+// const obj = {
+//   name: "sample Name",
+//   print: function () {
+//     console.log(this);
+//   },
+// };
 
-obj.print();
+// obj.print();
 
-const obj2 = {
-  name: "sample Name",
-  print: () => {
-    console.log(this);
-  },
-};
+// const obj2 = {
+//   name: "sample Name",
+//   print: () => {
+//     console.log(this);
+//   },
+// };
 
-obj2.print();
+// obj2.print();
 
 // Some limitations
 
