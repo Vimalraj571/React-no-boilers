@@ -15,6 +15,7 @@ import SimpleState from "./components/part_4/SimpleState";
 import FormSubmit from "./components/part_5/FormSubmit";
 import Uncontrolled from "./components/part_5/Uncontrolled";
 import Controlled from "./components/part_5/Controlled";
+import SimpleTodoRoot from "./components/part_5/SimpleTodo";
 
 function App() {
   const a = 10;
@@ -40,7 +41,8 @@ function App() {
       {/* <ArrObj /> */}
       {/* <FormSubmit /> */}
       {/* <Uncontrolled /> */}
-      <Controlled />
+      {/* <Controlled /> */}
+      <SimpleTodoRoot />
     </div>
   );
 }
