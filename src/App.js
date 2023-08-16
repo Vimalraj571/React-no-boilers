@@ -1,7 +1,7 @@
-import ChildOne from "./components/ChildOne";
-import ExampleHeader from "./components/ExampleHeader";
+import ChildOne from "./components/part_2/ChildOne";
+import ExampleHeader from "./components/part_2/ExampleHeader";
 import HOC from "./components/HOC";
-import ObjectRender from "./components/ObjectRender";
+import ObjectRender from "./components/part_2/ObjectRender";
 import Wrapper from "./components/Wrapper";
 
 function App() {
