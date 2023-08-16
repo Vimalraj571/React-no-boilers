@@ -1,6 +1,6 @@
 const HOC = (Component) => (props) => {
   return (
-    <div style={{ color: "red" }}>
+    <div style={{ color: "green" }}>
       <Component {...props} />
     </div>
   );

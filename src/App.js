@@ -1,11 +1,12 @@
 import ArrObj from "./components/ArrObj";
 import ArrReact from "./components/ArrReact";
-import ChildOne from "./components/ChildOne";
-import ExampleHeader from "./components/ExampleHeader";
+import ChildOne from "./components/part_2/ChildOne";
+import ExampleHeader from "./components/part_2/ExampleHeader";
 import HOC from "./components/HOC";
-import ObjectRender from "./components/ObjectRender";
+import ObjectRender from "./components/part_2/ObjectRender";
 import SimpleState from "./components/SimpleState";
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./components/part_3/Wrapper";
+import Test from "./components/part_1/Test";
 
 function App() {
   const a = 10;
@@ -15,7 +16,8 @@ function App() {
   };
   return (
     <div>
-      {/* <ExampleHeader countExample={a} /> */}
+      {/* <Test /> */}
+      {/* {/* <ExampleHeader countExample={a} /> */} */}
       {/* Above line Passing the props from App(parent component) to ExampleHeader(child component) */}
       {/* <ChildOne ch1={"ch1"} ch2={"ch2"} ch3={"ch3"} /> */}
       {/* Here We are passing the the props from App(parent component) to <ChildOne>(child One) .  
