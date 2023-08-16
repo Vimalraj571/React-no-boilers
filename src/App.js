@@ -1,15 +1,20 @@
+import Test from "./components/part_1/Test";
+
+import ChildOne from "./components/part_2/ChildOne";
+import ExampleHeader from "./components/part_2/ExampleHeader";
+import ObjectRender from "./components/part_2/ObjectRender";
+
 import ArrObj from "./components/part_4/ArrObj";
 import ArrReact from "./components/part_4/ArrReact";
-import ChildOne from "./components/part_2/ChildOne";
-import Controlled from "./components/part_5/Controlled";
-import ExampleHeader from "./components/part_2/ExampleHeader";
-import FormSubmit from "./components/part_5/FormSubmit";
+
 import HOC from "./components/part_3/HOC";
-import ObjectRender from "./components/part_2/ObjectRender";
-import SimpleState from "./components/part_4/SimpleState";
-import Uncontrolled from "./components/part_5/Uncontrolled";
 import Wrapper from "./components/part_3/Wrapper";
-import Test from "./components/part_1/Test";
+
+import SimpleState from "./components/part_4/SimpleState";
+
+import FormSubmit from "./components/part_5/FormSubmit";
+import Uncontrolled from "./components/part_5/Uncontrolled";
+import Controlled from "./components/part_5/Controlled";
 
 function App() {
   const a = 10;
