@@ -7,6 +7,27 @@ const b = 20;
 
 // b = 30;
 
+// let m = [1,2,3,3]
+// let n = [3,4,5,6]
+
+// let o = [...m,...n]
+
+// console.log(o)
+
+let x = { name: "test", age: 12 };
+let y = { address: "chennai", pin: "12345" };
+
+let z = { ...x, ...y };
+// console.log(y);
+
+// console.log(y.address)
+
+const { address, pin } = y;
+
+// console.log(address);
+
+// console.log(z);
+
 // console.log(c);
 var c = 30;
 // console.log(c);
@@ -51,8 +72,8 @@ const tickets = [
 
 // Apply given things to all the element
 
-// console.log(notes.map((note) => `<li>${note.id}</li>`));
-// const liStuff = notes.map((note) => `<li>${note.id}</li>`)
+// console.log(tickets.map((ticket) => `<li>${ticket.id}</li>`));
+// const liStuff = tickets.map((ticket) => `<li>${ticket.id}</li>`)
 
 // return (
 //   <>{liStuff}</>
@@ -72,15 +93,15 @@ const tickets = [
 // console.log(tickets.find((note) => note.address === "bangalore"));
 
 // Accumulate the value Dead Simple example
-// console.log(notes.reduce((acc,next)=>{
+// console.log(tickets.reduce((acc,next)=>{
 //     acc = next.fare + acc
 //     return acc
 // },0))
 
 // Removes the first one
-// console.log(notes)
-// console.log(notes.shift());
-// console.log(notes)
+// console.log(tickets)
+// console.log(tickets.shift());
+// console.log(tickets)
 
 // Append to the array and return as newly created array
 // console.log(tickets.concat({
@@ -94,8 +115,8 @@ const tickets = [
 
 // Template Literals
 
-// let testVariable = 10;
-// let testName = "RajiniKanth";
+let testVariable = 10;
+let testName = "RajiniKanth";
 
 // console.log(`This is testVariabl ${testVariable} and testName ${testName}`);
 
@@ -122,12 +143,12 @@ const tickets = [
 
 // Place holder for the async task
 
-const promise = new Promise((resolve, reject) => {
-  if (true) {
-    resolve("Promise Resolved");
-  }
-  reject(new Error("This is error"));
-});
+// const promise = new Promise((resolve, reject) => {
+//   if (true) {
+//     resolve("Promise Resolved");
+//   }
+//   reject(new Error("This is error"));
+// });
 
 // promise
 //     .then((res)=>{console.log(res);return res})
@@ -137,14 +158,14 @@ const promise = new Promise((resolve, reject) => {
 
 // async/await
 
-async function simpleTest() {
-  try {
-    let result = await promise;
-    console.log(result);
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function simpleTest() {
+//   try {
+//     let result = await promise;
+//     console.log(result);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 // simpleTest();
 
@@ -183,7 +204,7 @@ async function simpleTest() {
 
 // HOC - Higher Order Components
 
-// .map 
+// .map
 
 // apply the given condition or any style to all the component
 

@@ -3,12 +3,12 @@ const ObjectRender = (props) => {
   return (
     <>
       {JSON.stringify(obj)}
-      <p>{obj.name}</p>
-      <p>{obj.profession}</p>
+      {/* <p>{obj.name}</p>
+      <p>{obj.age}</p> */}
       {/* 
         Above statements are valid
       */}
-      <p>{obj}</p>
+      {/* <p>{obj}</p> */}
       {/* 
         Above statement is valid
       */}
