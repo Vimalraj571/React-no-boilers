@@ -21,13 +21,18 @@ import { useState } from "react";
 // import Controlled from "./components/part_5/Controlled";
 // import SimpleTodoRoot from "./components/part_5/SimpleTodo";
 
-import SimpleHook from "./components/part_6/SimpleHook";
-import SimpleFetch from "./components/part_6/SimpleFetch";
-import StyledComponent from "./components/part_6/StyledComponent";
-import StyledComponent2 from "./components/part_6/StyledComponent2";
-import Notification from "./components/part_6/Notification";
-import SimpleTodoRootSix from "./components/part_6/SimpleTodo";
-import InlineStyle from "./components/part_6/InlineStyle";
+// import SimpleHook from "./components/part_6/SimpleHook";
+// import SimpleFetch from "./components/part_6/SimpleFetch";
+// import StyledComponent from "./components/part_6/StyledComponent";
+// import StyledComponent2 from "./components/part_6/StyledComponent2";
+// import Notification from "./components/part_6/Notification";
+// import SimpleTodoRootSix from "./components/part_6/SimpleTodo";
+// import InlineStyle from "./components/part_6/InlineStyle";
+
+// import Class from "./components/ClassComp/Class";
+// import CounterFn from "./components/ClassComp/Function";
+// import Test from "./components/ClassComp/Lc";
+import UseEff from "./components/ClassComp/useEff";
 
 function App() {
   const a = 10;
@@ -37,7 +42,7 @@ function App() {
     age: 11,
   };
 
-  const [message,setMessage] = useState('Test')
+  const [message, setMessage] = useState("Test");
 
   return (
     <div>
@@ -67,8 +72,12 @@ function App() {
       {/* <InlineStyle /> */}
       {/* <StyledComponent /> */}
       {/* <StyledComponent2 /> */}
-      <Notification message={"Test"} setMessage={setMessage}/>
-      <SimpleTodoRootSix message={message} setMessage={setMessage}/>
+      {/* <Notification message={"Test"} setMessage={setMessage}/> */}
+      {/* <SimpleTodoRootSix message={message} setMessage={setMessage}/> */}
+      {/* <Class />
+      <CounterFn /> */}
+      {/* <Test /> */}
+      {/* <UseEff /> */}
     </div>
   );
 }
