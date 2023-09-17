@@ -21,6 +21,19 @@ const FormSubmit = () => {
     <>
       FormSubmit
       <form onSubmit={handleSubmit}>
+        {/* 
+        // Simple single state variable
+        <div>
+          <label>Name</label>
+          <input
+            type="text"
+            value={formValues.name}
+            onChange={(e) =>
+              setName(e.target.value)
+            }
+          />
+        </div>         
+        */}
         <div>
           <label>Name</label>
           <input
