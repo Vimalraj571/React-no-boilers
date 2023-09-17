@@ -41,7 +41,7 @@ const ListTodo = ({ todos }) => {
   return (
     <div>
       {todos.map((todo) => (
-        <li key={todo.id}>{todo.body}</li>
+        <li key={todo.id}>{todo.body} <button>Del</button> </li>
       ))}
     </div>
   );

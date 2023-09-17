@@ -2,11 +2,15 @@ import { useState } from "react";
 
 const ArrReact = () => {
   const [alpha, setAlphaArr] = useState([]);
+  console.log()
+  // let a = [];
   console.log(alpha);
   console.log("re render");
   return (
     <>
       <p>ArrReact</p>
+      {/* <button onClick={()=>{a.push('a')}}>Temp</button>
+      {a} */}
       <button onClick={() => setAlphaArr(alpha.concat("B"))}>
         Add 'B' Arr
       </button>
@@ -21,5 +25,7 @@ const ArrReact = () => {
     </>
   );
 };
+
+// a.map(x=><div key={x}>{x}</div>)
 
 export default ArrReact;

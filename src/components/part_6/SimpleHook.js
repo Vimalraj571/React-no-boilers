@@ -5,9 +5,18 @@ const SimpleHook = () => {
   const [test, setTest] = useState("Test UseEffect");
 
   useEffect(() => {
-    console.log("UseEffect");
+    console.log("UseEffect init");
     setTest("UseEffect");
   }, []);
+
+  useEffect(() => {
+    console.log("This is Btn clicked use effect");
+    setTest("Btn Clicked");
+  }, [test]);
+
+  // useEffect(()=>{}) // not valid
+  // useEffect(()=>{console.log('asfd');},[test]) // if the react statevariable
+  // useEffect(()=>{console.log('asfd');},[]) //-  only one at init render
 
   return (
     <div>

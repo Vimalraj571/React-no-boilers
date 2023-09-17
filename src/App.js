@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import Test from "./components/part_1/Test";
+// import Test from "./components/part_1/Test";
 
 // import ChildOne from "./components/part_2/ChildOne";
 // import ExampleHeader from "./components/part_2/ExampleHeader";
-import ObjectRender from "./components/part_2/ObjectRender";
+// import ObjectRender from "./components/part_2/ObjectRender";
 
 // import HOC from "./components/part_3/HOC";
 // import Wrapper from "./components/part_3/Wrapper";
@@ -12,18 +12,22 @@ import ObjectRender from "./components/part_2/ObjectRender";
 // import ArrObj from "./components/part_4/ArrObj";
 // import ArrReact from "./components/part_4/ArrReact";
 // import SimpleState from "./components/part_4/SimpleState";
+// import ConditionalRender from "./components/part_4/ConditionalRender";
+// import ConditionalRender2 from "./components/part_4/ConditionalRender2";
+// import Cr from "./components/part_4/Cr";
 
 // import FormSubmit from "./components/part_5/FormSubmit";
 // import Uncontrolled from "./components/part_5/Uncontrolled";
 // import Controlled from "./components/part_5/Controlled";
 // import SimpleTodoRoot from "./components/part_5/SimpleTodo";
 
-// import SimpleHook from "./components/part_6/SimpleHook";
-// import SimpleFetch from "./components/part_6/SimpleFetch";
-// import StyledComponent from "./components/part_6/StyledComponent";
-// import StyledComponent2 from "./components/part_6/StyledComponent2";
-// import Notification from "./components/part_6/Notification";
-// import SimpleTodoRootSix from "./components/part_6/SimpleTodo";
+import SimpleHook from "./components/part_6/SimpleHook";
+import SimpleFetch from "./components/part_6/SimpleFetch";
+import StyledComponent from "./components/part_6/StyledComponent";
+import StyledComponent2 from "./components/part_6/StyledComponent2";
+import Notification from "./components/part_6/Notification";
+import SimpleTodoRootSix from "./components/part_6/SimpleTodo";
+import InlineStyle from "./components/part_6/InlineStyle";
 
 function App() {
   const a = 10;
@@ -33,7 +37,7 @@ function App() {
     age: 11,
   };
 
-  const [message, setMessage] = useState("");
+  const [message,setMessage] = useState('Test')
 
   return (
     <div>
@@ -46,21 +50,25 @@ function App() {
           <ChildTwo>(child two) to <ChildThree>
           We are using {...props} to directly get the data in the props from all the component
       */}
-      <ObjectRender obj={objectIssue} />
+      {/* <ObjectRender obj={objectIssue} /> */}
       {/* <Wrapper /> */}
       {/* <SimpleState /> */}
-      {/* <ArrReact /> */}
-      {/* <ArrObj /> */}
+      {/* <ArrReact />
+      <ArrObj /> */}
+      {/* <Cr/> */}
+      {/* <ConditionalRender /> */}
+      {/* <ConditionalRender2 /> */}
       {/* <FormSubmit /> */}
       {/* <Uncontrolled /> */}
       {/* <Controlled /> */}
       {/* <SimpleTodoRoot /> */}
       {/* <SimpleHook /> */}
       {/* <SimpleFetch />  */}
+      {/* <InlineStyle /> */}
       {/* <StyledComponent /> */}
       {/* <StyledComponent2 /> */}
-      {/* <Notification message={"Test"} /> */}
-      {/* <SimpleTodoRootSix message={message} setMessage={setMessage}/> */}
+      <Notification message={"Test"} setMessage={setMessage}/>
+      <SimpleTodoRootSix message={message} setMessage={setMessage}/>
     </div>
   );
 }
