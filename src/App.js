@@ -29,9 +29,10 @@ import { useState } from "react";
 // import SimpleTodoRootSix from "./components/part_6/SimpleTodo";
 // import InlineStyle from "./components/part_6/InlineStyle";
 
-import Class from "./components/ClassComp/Class";
-import CounterFn from "./components/ClassComp/Function";
-import Test from "./components/ClassComp/Lc";
+// import Class from "./components/ClassComp/Class";
+// import CounterFn from "./components/ClassComp/Function";
+// import Test from "./components/ClassComp/Lc";
+import UseEff from "./components/ClassComp/useEff";
 
 function App() {
   const a = 10;
@@ -75,7 +76,8 @@ function App() {
       {/* <SimpleTodoRootSix message={message} setMessage={setMessage}/> */}
       {/* <Class />
       <CounterFn /> */}
-      <Test />
+      {/* <Test /> */}
+      {/* <UseEff /> */}
     </div>
   );
 }
