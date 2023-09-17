@@ -32,7 +32,11 @@ import { useState } from "react";
 // import Class from "./components/ClassComp/Class";
 // import CounterFn from "./components/ClassComp/Function";
 // import Test from "./components/ClassComp/Lc";
-import UseEff from "./components/ClassComp/useEff";
+// import UseEff from "./components/ClassComp/useEff";
+
+// import SimpleRoute from "./components/part_7/SimpleRoute";
+import RedirectExample from "./components/part_7/RedirectNavigateExample"
+import SimpleTodoRoot from "./components/part_7/TodoWithRoute";
 
 function App() {
   const a = 10;
@@ -78,6 +82,9 @@ function App() {
       <CounterFn /> */}
       {/* <Test /> */}
       {/* <UseEff /> */}
+      {/* <SimpleRoute /> */}
+      {/* <RedirectExample /> */}
+      <SimpleTodoRoot />
     </div>
   );
 }
