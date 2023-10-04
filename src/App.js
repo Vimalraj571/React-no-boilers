@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, createContext } from "react";
+import { useSelector } from "react-redux";
 
 // import Test from "./components/part_1/Test";
 
@@ -35,8 +36,15 @@ import { useState } from "react";
 // import UseEff from "./components/ClassComp/useEff";
 
 // import SimpleRoute from "./components/part_7/SimpleRoute";
-import RedirectExample from "./components/part_7/RedirectNavigateExample"
-import SimpleTodoRoot from "./components/part_7/TodoWithRoute";
+// import RedirectExample from "./components/part_7/RedirectNavigateExample"
+// import SimpleTodoRoot from "./components/part_7/TodoWithRoute";
+
+import TodoList from "./components/part_8/redux_toolkit/TodoList";
+
+import ApiContent from "./components/part_8/redux_toolkit/ApiContent";
+
+import ComponentC from "./components/part_8/use_context/ComponentC";
+export const UserContext = createContext();
 
 function App() {
   const a = 10;
@@ -47,6 +55,8 @@ function App() {
   };
 
   const [message, setMessage] = useState("Test");
+
+  console.log('app redux state datas', useSelector((state) => state));
 
   return (
     <div>
@@ -84,7 +94,24 @@ function App() {
       {/* <UseEff /> */}
       {/* <SimpleRoute /> */}
       {/* <RedirectExample /> */}
-      <SimpleTodoRoot />
+      {/* <SimpleTodoRoot /> */}
+
+      {/* Start: UseContext Hook Example */}
+      <h1>Simple example for useContext hook</h1>
+      <UserContext.Provider value='Kowsalya S'>
+        <ComponentC />
+      </UserContext.Provider>
+      {/* End: UseContext Hook Example */}
+
+      {/* Start: Redux Toolkit - Todo Example */}
+      <h1>Redux-toolkit Todolist</h1>
+      <TodoList />
+      {/* End: Redux Toolkit - Todo Example */}
+
+      {/* Start: Redux Toolkit Async Thunk - API Example */}
+      <h1>Redux-toolkit Async Thunk - API Content</h1>
+      <ApiContent />
+      {/* End: Redux Toolkit Async Thunk - API Example */}
     </div>
   );
 }
