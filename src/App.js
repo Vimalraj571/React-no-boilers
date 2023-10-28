@@ -44,6 +44,10 @@ import TodoList from "./components/part_8/redux_toolkit/TodoList";
 import ApiContent from "./components/part_8/redux_toolkit/ApiContent";
 
 import ComponentC from "./components/part_8/use_context/ComponentC";
+
+import FunctionalComponent from "./components/part_9/FunctionalComponent";
+import ClassComponent from "./components/part_9/ClassComponent";
+
 export const UserContext = createContext();
 
 function App() {
@@ -97,21 +101,26 @@ function App() {
       {/* <SimpleTodoRoot /> */}
 
       {/* Start: UseContext Hook Example */}
-      <h1>Simple example for useContext hook</h1>
-      <UserContext.Provider value='Kowsalya S'>
-        <ComponentC />
-      </UserContext.Provider>
+        {/* <h1>Simple example for useContext hook</h1>
+        <UserContext.Provider value='Kowsalya S'>
+          <ComponentC />
+        </UserContext.Provider> */}
       {/* End: UseContext Hook Example */}
 
       {/* Start: Redux Toolkit - Todo Example */}
-      <h1>Redux-toolkit Todolist</h1>
-      <TodoList />
+        {/* <h1>Redux-toolkit Todolist</h1>
+        <TodoList /> */}
       {/* End: Redux Toolkit - Todo Example */}
 
       {/* Start: Redux Toolkit Async Thunk - API Example */}
-      <h1>Redux-toolkit Async Thunk - API Content</h1>
-      <ApiContent />
+        {/* <h1>Redux-toolkit Async Thunk - API Content</h1>
+        <ApiContent /> */}
       {/* End: Redux Toolkit Async Thunk - API Example */}
+
+      {/* Start: Functional Vs Class Components */}
+        <FunctionalComponent />
+        <ClassComponent />
+      {/* End: Functional Vs Class Components */}
     </div>
   );
 }
